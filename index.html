@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Moderno</title>
+    <title>Antoine Choley</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>Catálogo Moderno</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#products">Produtos</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
+        <div class="header-content">
+            <h1>Rerisson H R Silva</h1>
+            <p>Programador WEB</p>
+            <a href="#about" class="button">Sobre Mim</a>
+            <a href="#projects" class="button">Meus Projetos</a>
         </div>
     </header>
 
-    <section id="main" class="main-section">
+    <section id="about" class="about-section">
         <div class="container">
-            <h2>Bem-vindo ao Catálogo Moderno</h2>
-            <p>Descubra uma variedade incrível de produtos com um visual moderno e colorido.</p>
-            <a href="#products" class="cta-button">Veja os Produtos</a>
-        </div>
-    </section>
-
-    <section id="products" class="products-section">
-        <div class="container">
-            <h2>Produtos</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Produto 1">
-                    <h3>Produto 1</h3>
-                    <p>Descrição breve do produto 1.</p>
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/300" alt="Sobre Mim">
+                <div>
+                    <p>Sou um programador web apaixonado por tecnologias como HTML, CSS, JavaScript, e frameworks
+                        modernos. Gosto de criar soluções eficientes e inovadoras para problemas complexos.</p>
+                    <a href="#projects" class="button">Veja Meus Projetos</a>
                 </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Produto 2">
-                    <h3>Produto 2</h3>
-                    <p>Descrição breve do produto 2.</p>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Produto 3">
-                    <h3>Produto 3</h3>
-                    <p>Descrição breve do produto 3.</p>
-                </div>
-                <!-- Adicione mais cards conforme necessário -->
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="gallery-section">
+    <section id="projects" class="projects-section">
         <div class="container">
-            <h2>Galeria</h2>
-            <div class="carousel">
-                <img src="https://via.placeholder.com/600x300" alt="Imagem 1">
-                <img src="https://via.placeholder.com/600x300" alt="Imagem 2">
-                <img src="https://via.placeholder.com/600x300" alt="Imagem 3">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1. Tecnologias usadas: HTML, CSS, JavaScript.</p>
+                    <a href="#" class="button">Ver Mais</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2. Tecnologias usadas: React, Node.js.</p>
+                    <a href="#" class="button">Ver Mais</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Projeto 3">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto 3. Tecnologias usadas: Vue.js, Firebase.</p>
+                    <a href="#" class="button">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Antoine é um profissional excepcional. Seu trabalho superou nossas expectativas."</p>
+                    <h4>Cliente 1</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Trabalhar com Antoine foi uma experiência incrível. Ele é altamente qualificado e dedicado."</p>
+                    <h4>Cliente 2</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Antoine entregou um projeto de alta qualidade dentro do prazo. Recomendo fortemente."</p>
+                    <h4>Cliente 3</h4>
+                </div>
             </div>
         </div>
     </section>
@@ -68,24 +82,27 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contato</h2>
-            <form>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Enviar</button>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Enviar</button>
             </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Catálogo Moderno. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Rerisson H R Silva. Todos os direitos reservados.</p>
             <ul class="social-links">
                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -96,4 +113,5 @@
 
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
